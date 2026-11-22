@@ -11,6 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    max-width: 100%;
 
 }
 header{
@@ -70,15 +71,16 @@ header h3{
 .info{
     max-width: 40%;
     position: relative;
-    top: 15%;
+    top: 20%;
     color: rgb(211, 211, 211);
     text-shadow: 0 0 3px rgb(0, 0, 0);
-    left: 100px;
+    left: 10%;
     animation:fadeup 0.4s ease-out forwards;
     display: none;
 }
 .info h1{
     margin-bottom: 17px;
+    font-size: 25px;
 }
 .icons{
     margin-top: 20px;
@@ -352,5 +354,54 @@ header h3{
 }
     .clouds img:nth-child(6){
         display: none;
+    }
+    /* .table{
+    max-width: 400px;
+    grid-template-columns: repeat(2,350px);    
+}
+.table p{
+    font-size: 14px;
+}
+.table h3{
+    font-size: 14px;
+} */
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 600px) {
+
+    .sun {
+        left: 0;
+        transform: scale(0.6);
+        transform-origin: top left;
+    }
+
+    .sun img:not(:first-child) {
+        display: none;
+    }
+
+    .moon {
+        right: 12px;
+        top: 100px;
+    }
+
+    .table {
+        width: calc(100% - 24px);
+        max-width: 600px;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .table p {
+        margin-left: 0;
+        overflow-wrap: anywhere;
+        font-size: 14px;
+    }
+
+    .info {
+        max-width: calc(100% - 32px);
+        left: 0;
+        margin: 0 16px;
     }
 }
