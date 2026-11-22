@@ -68,7 +68,7 @@ API Documentation: [https://open-meteo.com/en/docs](https://open-meteo.com/en/do
 ## 📁 Project Structure
 
 ```text
-Weather-App/
+weather-app/
 │
 ├── index.html
 ├── Weather.css
@@ -86,13 +86,13 @@ You can run this project locally without installing any additional dependencies.
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/ixprs/weather-App.git
+git clone https://github.com/ixprs/weather-app.git
 ```
 
 **2. Navigate to the project directory**
 
 ```bash
-cd weather-App
+cd weather-app
 ```
 
 **3. Run the application**
