@@ -298,32 +298,24 @@ header h3{
 .sun{
     position: absolute;
     display: none;
-    top: 10px;
-    left: -10px;
+    top: 80px;
+    right: 20px;
+    opacity: 0.8;
+     z-index: -2;
 }
 .sun img{
-    width: 200px;
-    height: 200px;
-    z-index: 100;
+    width: 150px;
+    height: 150px;
+   
 }
-#secSun{
-    position: relative;
-    left: -200px;
-        z-index: 100;
 
-}
-#thirSun{
-    position: relative;
-     z-index: 100;
-    left: -400px;
-}
 .shine{
-    width: 42px;
-    height: 42px;    border-radius: 50%;
+    width: 80px;
+    height: 80px;    border-radius: 50%;
     position: absolute;
     box-shadow: 0 0 45px 10px rgb(255, 166, 0);
-    top: 93.7px;
-    left: 82.5px;
+    top: 35px;
+    right: 35px;
 }
 .moon{
     position: absolute;
@@ -359,18 +351,14 @@ header h3{
 
 /* Mobile Responsive Fix */
 @media (max-width: 600px) {
-
-    .sun {
-        left: 0;
-        transform: scale(0.8);
-        
-    }
-
     .moon {
         right: 12px;
         top: 100px;
     }
-
+    .sun {
+        right: 12px;
+        top: 100px;
+    }
     .table {
         width: calc(100% - 24px);
         max-width: 600px;
