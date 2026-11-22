@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Weather.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+</head>
+<body>
+    <header>
+        <h3>IX</h3>
+        <h4 id="home">How Is Weather</h4>
+        <div id="about">
+            <i class="far fa-circle-info" id="about-btn"></i>
+        </div>
+    </header>
+    <div class="animated">
+        <div class="rainy">
+            <div class="drop"></div>
+        </div>
+        <div class="snow">
+            <div class="snowDrops">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+            </div>
+            
+        </div>
+        <div class="mist">
+        </div>
+        <div class="partly">
+            <div class="clouds">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+                <img src="images/Realistic Wispy White Cloud Cutout.png" alt="">
+            </div>
+        </div>
+        <div class="sun"><img  src="images/sunburst.svg" alt=""><img id="secSun" src="images/sunburst.svg" alt=""><img id="thirSun" src="images/sunburst.svg" alt="">
+            <div class="shine"></div>
+        </div>
+        <div class="moon"><img src="images/moon.png" alt=""></div>
+    </div>
+    <div class="search" id="main">
+        <input type="text" id="entery" placeholder="Enter City Name!">
+        <button type="submit" id="btn">Search</button>
+        <div class="load">
+            Loading <div class="p1">.</div> <div class="p2">.</div> <div class="p3">.</div>
+        </div>
+        <div id="err"></div>
+        <div class="table">
+            <h3 class="titles">Location : </h3>
+            <p id="loc"></p>
+            <h3 class="titles">Local Time : </h3>
+            <p id="time"></p>
+            <h3 class="titles">Temprature : </h3>
+            <p id="tmp"></p>
+            <h3 class="titles">Wind Speed : </h3>
+            <p id="wind"></p>
+        </div>
+    </div>
+    <div class="info">
+        <h1>Hey! im Parsa , a Computer Engineering student</h1>
+        <p>im passionate about software development , cybersecurity and emerging technologies</p>
+        <p>i work primarily with Python , C# , C++ , HTML , Css , Javascript , SQL ...</p>
+        <div class="icons">
+            <a href="http://instagram.com/ix.prs"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://t.me/ixprs"> <i class="fa-brands fa-telegram"></i></a>
+            <a href="http://github.com/ixprs"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>
