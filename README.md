@@ -104,6 +104,7 @@ For a better development experience, you can use the Live Server extension in Vi
 ## 🖥️ Live Demo
 
 [**View Live Demo**]
+(https://ixprs.github.io/weather-app/)
 
 ## 👨‍💻 Author
 
