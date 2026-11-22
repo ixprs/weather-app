@@ -179,7 +179,7 @@ header h3{
     }
 }
 #err{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
     margin-top: 32px;
@@ -355,16 +355,6 @@ header h3{
     .clouds img:nth-child(6){
         display: none;
     }
-    /* .table{
-    max-width: 400px;
-    grid-template-columns: repeat(2,350px);    
-}
-.table p{
-    font-size: 14px;
-}
-.table h3{
-    font-size: 14px;
-} */
 }
 
 /* Mobile Responsive Fix */
@@ -372,12 +362,8 @@ header h3{
 
     .sun {
         left: 0;
-        transform: scale(0.6);
-        transform-origin: top left;
-    }
-
-    .sun img:not(:first-child) {
-        display: none;
+        transform: scale(0.8);
+        
     }
 
     .moon {
