@@ -196,7 +196,7 @@ function day(){
 }
 function CheckUi(){
      document.querySelector('.animated').style.display='block'
-    if (weatherStatus.includes("Snow")){
+    if (weatherStatus.includes("Snow") | (weatherStatus.includes("snow")){
         snow();
         document.querySelector('.snow').style.display='inline';
     }
@@ -204,13 +204,13 @@ function CheckUi(){
         rain();
         document.querySelector('.rainy').style.display='inline';
     }
-    if (weatherStatus.includes("Fog")){
+    if (weatherStatus.includes("Fog") | (weatherStatus.includes("fog")){
         document.querySelector('.mist').style.display='inline';
     }
     if (weatherStatus.includes("Sunny")){
         document.querySelector('.sun').style.display='inline';
     }
-    if (weatherStatus.includes("Cloudy") || weatherStatus.includes("Overcast") || weatherStatus.includes("Partly")){
+    if (weatherStatus.includes("Cloudy") | (weatherStatus.includes("Thunderstorm")) || weatherStatus.includes("Overcast") || weatherStatus.includes("Partly")){
         document.querySelector('.clouds').style.display='inline';
     }
     if (weatherStatus.includes("clear")){
