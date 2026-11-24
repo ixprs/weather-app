@@ -11,7 +11,7 @@ mainBtn.addEventListener('click',()=>{
     searchWindow.style.display='block';
     infoWindow.style.display='none';
 })
-searchBtn=document.getElementById('btn');
+const searchBtn=document.getElementById('btn');
 searchBtn.addEventListener('click',get);
 document.getElementById('entery').addEventListener('keydown', (event) => {
     if (event.key === 'Enter') get();
@@ -180,7 +180,10 @@ async function get() {
 
 function del(){
     document.querySelector('.snow').style.display='none';
-    document.querySelector('.rainy').style.display='none';
+
+document.querySelector('.snow').innerHTML = '';
+document.querySelector('.rainy').innerHTML = '';
+ document.querySelector('.rainy').style.display='none';
     document.querySelector('.mist').style.display='none';
     document.querySelector('.sun').style.display='none';
     document.querySelector('.clouds').style.display='none';
@@ -224,8 +227,8 @@ function rain(){
     for(let i=0 ;i<100;i++){
         let drop=document.createElement('div');
         drop.className='drop';
-        drop.style.left=Math.random(0,10)*100 + "%";
-        drop.style.animationDuration=(0.2 + Math.random(0,10))+'s';
+        drop.style.left=Math.random()*100 + "%";
+        drop.style.animationDuration=(0.2 + Math.random()*10)+'s';
         rainy.appendChild(drop);
         rainy.appendChild(drop);
     }
@@ -236,7 +239,7 @@ function snow(){
         let drop=document.createElement('div');
         drop.className='snowDrops';
         drop.innerHTML='<div class="d1"></div><div class="d2"></div><div class="d3"></div><div class="d4"></div>'
-        drop.style.left=Math.random(0,10)*100 + "%";
+        drop.style.left=Math.random()*100 + "%";
         drop.style.animationDuration=(1.5 + Math.random(0,10))+'s';
         snowy.appendChild(drop);
     }
