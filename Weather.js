@@ -196,7 +196,7 @@ function day(){
 }
 function CheckUi(){
      document.querySelector('.animated').style.display='block'
-    if (weatherStatus.includes("Snow") || (
+    if (weatherStatus.includes("Snow") || 
 weatherStatus.includes("snow")){
         snow();
         document.querySelector('.snow').style.display='inline';
