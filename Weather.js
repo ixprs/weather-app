@@ -228,7 +228,7 @@ function rain(){
         let drop=document.createElement('div');
         drop.className='drop';
         drop.style.left=Math.random()*100 + "%";
-        drop.style.animationDuration=(0.2 + Math.random()*10)+'s';
+        drop.style.animationDuration=(0.2 + Math.random(0,10)*10)+'s';
         rainy.appendChild(drop);
         rainy.appendChild(drop);
     }
